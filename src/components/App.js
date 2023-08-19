@@ -149,7 +149,7 @@ export default function App() {
   );
 
   useEffect(() => {
-    fetch(`http://localhost:3000/questions.json`)
+    fetch(`/questions.json`)
       .then((res) => res.json())
       .then((data) =>
         dispatch({ type: "dataReceived", payload: data.questions })
