@@ -24,7 +24,7 @@ const initialState = {
   answer: null,
   answers: [],
   points: 0,
-  highscore: JSON.parse(localStorage.getItem("highscore")),
+  highscore: JSON.parse(localStorage.getItem("highscore")) ?? 0,
   secondsRemaining: 0,
   difficulty: "all",
 };
